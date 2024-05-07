@@ -59,6 +59,9 @@ POST http://127.0.0.1:3000/products
 Content-Type: application/json
 
 {
-    "name": "iPad 4G",
-    "price": 222
+    "name": "MacBook Pro",
+    "price": 1999
 }
+
+### GET all products
+GET http://localhost:3000/products

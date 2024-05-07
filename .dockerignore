@@ -1,0 +1,6 @@
+./node_modules
+./Backup
+README.md
+Dockerfile
+.dockerignore
+docker-compose.yml
