@@ -1,0 +1,22 @@
+version: '3.9'
+
+services:
+  # MongoDB services
+  mongo_db:
+    container_name: mymongodb
+    ports:
+      - 27017:27017
+    image: mongo:latest
+    restart: always
+    volumes:
+      - /home/maradens/workspace/datadb:/data/db
+
+  # Node API services
+  api:
+    build: .
+    container_name: restful_api
+    ports:
+      - 3000:3000
+    restart: always
+    depends_on:
+      - mongo_db

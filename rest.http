@@ -1,0 +1,64 @@
+### GET all products
+GET http://localhost:3000/products
+
+### GET home 
+GET http://localhost:3000/
+
+### GET Query
+GET http://localhost:3000/test?name=iMac&price=3999
+
+### GET Router ID
+GET http://localhost:3000/test/1234d56c78b9a10/iMac/2999
+
+### POST JSON
+POST http://localhost:3000/test
+Content-Type: application/json
+
+{
+    "name": "Xioami Note 12",
+    "price": 399
+}
+
+### POST URLENCODED FORM
+POST http://localhost:3000/test
+Content-Type: application/x-www-form-urlencoded
+
+name=iMac&price=6999
+
+### POST Create a Product
+POST http://127.0.0.1:3000/products
+Content-Type: application/json
+
+{
+    "name": "iPad 5G",
+    "price": 399
+}
+
+### GET all products
+GET http://localhost:3000/products
+
+### GET a product by id
+GET http://localhost:3000/products/6638df8be10aeb58c014d15f
+
+### DELETE a product by id
+DELETE http://localhost:3000/products/6638df2ce10aeb58c014d159
+
+### PATCH a product by id
+PATCH  http://localhost:3000/products/6638eec1472cd2175dec82ef
+Content-Type: application/json
+
+{
+    "price": 9999,
+    "name": "MacBook Air Pro"
+}
+
+
+
+### POST Create a Product
+POST http://127.0.0.1:3000/products
+Content-Type: application/json
+
+{
+    "name": "iPad 4G",
+    "price": 222
+}
