@@ -30,38 +30,36 @@ POST http://127.0.0.1:3000/products
 Content-Type: application/json
 
 {
-    "name": "iPad 5G",
-    "price": 399
+    "name": "Samsung Flip Flop",
+    "price": 3.99
 }
 
 ### GET all products
 GET http://localhost:3000/products
-
-### GET a product by id
-GET http://localhost:3000/products/6638df8be10aeb58c014d15f
-
-### DELETE a product by id
-DELETE http://localhost:3000/products/6638df2ce10aeb58c014d159
-
-### PATCH a product by id
-PATCH  http://localhost:3000/products/6638eec1472cd2175dec82ef
-Content-Type: application/json
-
-{
-    "price": 9999,
-    "name": "MacBook Air Pro"
-}
-
-
 
 ### POST Create a Product
 POST http://127.0.0.1:3000/products
 Content-Type: application/json
 
 {
-    "name": "MacBook Pro",
-    "price": 1999
+    "name": "iPhone 16 5G",
+    "price": 2199
 }
 
 ### GET all products
 GET http://localhost:3000/products
+
+### PATCH a product by id
+PATCH  http://localhost:3000/products/6644b8d6d43650d2e6d8dfae
+Content-Type: application/json
+
+{
+    "price": 999,
+    "name": "Samsung Flip Flop"
+}
+
+### GET a product by id
+GET http://localhost:3000/products/6644b8d6d43650d2e6d8dfae
+
+### DELETE a product by id
+DELETE http://localhost:3000/products/663a3cd6df418309534c06cd
